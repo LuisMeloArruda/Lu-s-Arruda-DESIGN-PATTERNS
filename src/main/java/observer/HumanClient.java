@@ -4,24 +4,22 @@ import command.StringDrink;
 import command.StringRecipe;
 import strategy.OrderingStrategy;
 
-import java.security.PublicKey;
-
 public class HumanClient implements Client {
-    private OrderingStrategy os;
+    private OrderingStrategy strategy;
 
     public HumanClient(OrderingStrategy os) {
-        this.os = os;
+        this.strategy = os;
     }
     @Override
     public void happyHourStarted(Bar bar) {
-        this.os.happyHourStarted((StringBar) bar);
+        this.strategy.happyHourStarted((StringBar) bar);
     }
     @Override
     public void happyHourEnded(Bar bar) {
-        this.os.happyHourEnded((StringBar) bar);
+        this.strategy.happyHourEnded((StringBar) bar);
     }
     @Override
     public void wants(StringDrink drink, StringRecipe recipe, StringBar bar) {
-        this.os.wants(drink, recipe, (StringBar) bar);
+        this.strategy.wants(drink, recipe, bar);
     }
 }
