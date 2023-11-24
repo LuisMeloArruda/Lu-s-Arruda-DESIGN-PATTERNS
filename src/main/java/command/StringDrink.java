@@ -1,9 +1,9 @@
-package string;
+package command;
 
 public class StringDrink {
     private String string;
 
-    StringDrink(String string) {
+    public StringDrink(String string) {
         this.string = string;
     }
 

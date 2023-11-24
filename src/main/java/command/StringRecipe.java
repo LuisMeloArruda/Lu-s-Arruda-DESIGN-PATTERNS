@@ -1,11 +1,11 @@
-package string;
+package command;
 
 import java.util.List;
 
 public class StringRecipe {
     private List<StringTransformer> list;
 
-    StringRecipe(List<StringTransformer> transformers ) {
+    public StringRecipe(List<StringTransformer> transformers) {
         this.list = transformers;
     }
 

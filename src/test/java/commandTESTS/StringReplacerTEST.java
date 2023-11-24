@@ -1,8 +1,8 @@
-package string;
+package commandTESTS;
 
-import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import command.StringDrink;
+import command.StringReplacer;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 

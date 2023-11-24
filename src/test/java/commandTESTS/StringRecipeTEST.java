@@ -1,7 +1,6 @@
-package string;
+package commandTESTS;
 
-import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.BeforeEach;
+import command.*;
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;

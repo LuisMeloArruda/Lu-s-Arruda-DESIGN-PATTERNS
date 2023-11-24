@@ -1,6 +1,10 @@
-package string;
+package commandTESTS;
 
 import org.junit.jupiter.api.Test;
+import command.StringCaseChanger;
+import command.StringDrink;
+import command.StringInverter;
+import command.StringReplacer;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 

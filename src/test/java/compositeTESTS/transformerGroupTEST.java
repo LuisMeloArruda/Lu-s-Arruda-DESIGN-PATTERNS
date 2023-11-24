@@ -1,5 +1,7 @@
-package string;
+package compositeTESTS;
 
+import command.*;
+import composite.StringTransformerGroup;
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
