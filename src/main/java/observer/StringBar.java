@@ -1,5 +1,8 @@
 package observer;
 
+import command.StringDrink;
+import command.StringRecipe;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -23,11 +26,11 @@ public class StringBar extends Bar {
 
     @Override
     public void endHappyHour() {
-
         this.boleano = false;
         notifyObservers();
     }
 
-
-
+    public void order(StringDrink drink, StringRecipe recipe) {
+        recipe.mix(drink);
+    }
 }
